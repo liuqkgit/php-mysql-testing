@@ -1,0 +1,198 @@
+50 multi sql without transaction. use prepare. time: 0.040228128433228
+50 multi sql without transaction. use prepare. time: 0.040117979049683
+50 multi sql without transaction. use prepare. time: 0.040488958358765
+50 multi sql without transaction. use prepare. time: 0.039549827575684
+50 multi sql without transaction. use prepare. time: 0.040108919143677
+50 multi sql without transaction. use prepare. time: 0.039642095565796
+50 multi sql without transaction. use prepare. time: 0.039952039718628
+50 multi sql without transaction. use prepare. time: 0.039832830429077
+50 multi sql without transaction. use prepare. time: 0.039329051971436
+50 multi sql without transaction. use prepare. time: 0.039607048034668
+1）循环执行50次单条插入语句，不使用事务，使用prepare预处理sql，测试10次，平均耗时 0.039885687828064
+
+500 multi sql without transaction. use prepare. time: 0.36375212669373
+500 multi sql without transaction. use prepare. time: 0.3601279258728
+500 multi sql without transaction. use prepare. time: 0.36318492889404
+500 multi sql without transaction. use prepare. time: 0.36085796356201
+500 multi sql without transaction. use prepare. time: 0.35946893692017
+500 multi sql without transaction. use prepare. time: 0.35919785499573
+500 multi sql without transaction. use prepare. time: 0.35841083526611
+500 multi sql without transaction. use prepare. time: 0.36850500106812
+500 multi sql without transaction. use prepare. time: 0.35741496086121
+500 multi sql without transaction. use prepare. time: 0.36182689666748
+2）循环执行500次单条插入语句，不使用事务，使用prepare预处理sql，测试10次，平均耗时 0.36127474308014
+
+50 multi sql with transaction. use prepare. time: 0.014028072357178
+50 multi sql with transaction. use prepare. time: 0.013682842254639
+50 multi sql with transaction. use prepare. time: 0.013408899307251
+50 multi sql with transaction. use prepare. time: 0.013584136962891
+50 multi sql with transaction. use prepare. time: 0.014179944992065
+50 multi sql with transaction. use prepare. time: 0.013998031616211
+50 multi sql with transaction. use prepare. time: 0.016696929931641
+50 multi sql with transaction. use prepare. time: 0.013574123382568
+50 multi sql with transaction. use prepare. time: 0.01383113861084
+50 multi sql with transaction. use prepare. time: 0.013915061950684
+3）循环执行50次单条插入语句，使用事务，使用prepare预处理sql，测试10次，平均耗时 0.014089918136597
+
+500 multi sql with transaction. use prepare. time: 0.086477041244507
+500 multi sql with transaction. use prepare. time: 0.091739892959595
+500 multi sql with transaction. use prepare. time: 0.084945917129517
+500 multi sql with transaction. use prepare. time: 0.085200071334839
+500 multi sql with transaction. use prepare. time: 0.08758807182312
+500 multi sql with transaction. use prepare. time: 0.091943025588989
+500 multi sql with transaction. use prepare. time: 0.089152097702026
+500 multi sql with transaction. use prepare. time: 0.09483790397644
+500 multi sql with transaction. use prepare. time: 0.086946964263916
+500 multi sql with transaction. use prepare. time: 0.088122844696045
+4）循环执行500次单条插入语句，使用事务，使用prepare预处理sql，测试10次，平均耗时 0.088695383071899
+
+
+50 one sql without transaction. time: 0.0082590579986572
+50 one sql without transaction. time: 0.0077610015869141
+50 one sql without transaction. time: 0.0076708793640137
+50 one sql without transaction. time: 0.0076570510864258
+50 one sql without transaction. time: 0.00748610496521
+50 one sql without transaction. time: 0.0075209140777588
+50 one sql without transaction. time: 0.0077030658721924
+50 one sql without transaction. time: 0.0083460807800293
+50 one sql without transaction. time: 0.0075740814208984
+50 one sql without transaction. time: 0.0077669620513916
+5）50条数据拼接成一条插入语句，不使用事务，测试10次，平均耗时 0.0077745199203491
+
+500 one sql without transaction. time: 0.049285888671875
+500 one sql without transaction. time: 0.055186986923218
+500 one sql without transaction. time: 0.046702861785889
+500 one sql without transaction. time: 0.047339916229248
+500 one sql without transaction. time: 0.047554016113281
+500 one sql without transaction. time: 0.047650098800659
+500 one sql without transaction. time: 0.047890186309814
+500 one sql without transaction. time: 0.047156095504761
+500 one sql without transaction. time: 0.048105001449585
+500 one sql without transaction. time: 0.048421144485474
+6）500条数据拼接成一条插入语句，不使用事务，测试10次，平均耗时 0.04852921962738
+
+50 one sql with transaction. time: 0.0081448554992676
+50 one sql with transaction. time: 0.0076088905334473
+50 one sql with transaction. time: 0.0076420307159424
+50 one sql with transaction. time: 0.0077638626098633
+50 one sql with transaction. time: 0.0077159404754639
+50 one sql with transaction. time: 0.0080850124359131
+50 one sql with transaction. time: 0.0076720714569092
+50 one sql with transaction. time: 0.009335994720459
+50 one sql with transaction. time: 0.0078802108764648
+50 one sql with transaction. time: 0.0078370571136475
+7）50条数据拼接成一条插入语句，使用事务，测试10次，平均耗时 0.0079685926437378
+
+500 one sql with transaction. time: 0.048471927642822
+500 one sql with transaction. time: 0.048916101455688
+500 one sql with transaction. time: 0.047590017318726
+500 one sql with transaction. time: 0.048107147216797
+500 one sql with transaction. time: 0.048131942749023
+500 one sql with transaction. time: 0.054688930511475
+500 one sql with transaction. time: 0.0487220287323
+500 one sql with transaction. time: 0.048264026641846
+500 one sql with transaction. time: 0.049523830413818
+500 one sql with transaction. time: 0.048993110656738
+8）500条数据拼接成一条插入语句，使用事务，测试10次，平均耗时 0.049140906333923
+
+
+**更换数据库引擎再尝试-START**
+
+500 one sql without transaction. MyISAM. time: 0.026787996292114
+500 one sql without transaction. MyISAM. time: 0.026010036468506
+500 one sql without transaction. MyISAM. time: 0.026823997497559
+500 one sql without transaction. MyISAM. time: 0.026234865188599
+500 one sql without transaction. MyISAM. time: 0.026391983032227
+500 one sql without transaction. MyISAM. time: 0.026327133178711
+500 one sql without transaction. MyISAM. time: 0.025664091110229
+500 one sql without transaction. MyISAM. time: 0.026002168655396
+500 one sql without transaction. MyISAM. time: 0.029281139373779
+500 one sql without transaction. MyISAM. time: 0.026402950286865
+9）500条数据拼接成一条插入语句，使用事务，测试10次，平均耗时 0.026592636108398
+
+500 one sql with transaction. MyISAM. time: 0.026309967041016
+500 one sql with transaction. MyISAM. time: 0.026243925094604
+500 one sql with transaction. MyISAM. time: 0.026320934295654
+500 one sql with transaction. MyISAM. time: 0.026481866836548
+500 one sql with transaction. MyISAM. time: 0.026607990264893
+500 one sql with transaction. MyISAM. time: 0.026015043258667
+500 one sql with transaction. MyISAM. time: 0.026585102081299
+500 one sql with transaction. MyISAM. time: 0.029366016387939
+500 one sql with transaction. MyISAM. time: 0.029715061187744
+500 one sql with transaction. MyISAM. time: 0.026642084121704
+10）500条数据拼接成一条插入语句，MyISAM引擎，测试10次，平均耗时 0.027028799057007
+
+**更换数据库引擎再尝试-END**
+
+
+50 multi sql without transaction. time: 0.038105010986328
+50 multi sql without transaction. time: 0.034763097763062
+50 multi sql without transaction. time: 0.035983085632324
+50 multi sql without transaction. time: 0.036693811416626
+50 multi sql without transaction. time: 0.036457061767578
+50 multi sql without transaction. time: 0.036318063735962
+50 multi sql without transaction. time: 0.035700798034668
+50 multi sql without transaction. time: 0.037458896636963
+50 multi sql without transaction. time: 0.036029100418091
+50 multi sql without transaction. time: 0.033850908279419
+11）循环执行50次单条插入语句，不使用事务，测试10次，平均耗时 0.036135983467102
+
+500 multi sql without transaction. time: 0.34020209312439
+500 multi sql without transaction. time: 0.33707308769226
+500 multi sql without transaction. time: 0.34546303749084
+500 multi sql without transaction. time: 0.34074997901917
+500 multi sql without transaction. time: 0.3321578502655
+500 multi sql without transaction. time: 0.33808302879333
+500 multi sql without transaction. time: 0.3363790512085
+500 multi sql without transaction. time: 0.3378210067749
+500 multi sql without transaction. time: 0.34121584892273
+500 multi sql without transaction. time: 0.33748698234558
+12）循环执行500次单条插入语句，不使用事务，测试10次，平均耗时 0.33866319656372
+
+50 multi sql with transaction. time: 0.01069712638855
+50 multi sql with transaction. time: 0.0104820728302
+50 multi sql with transaction. time: 0.010852813720703
+50 multi sql with transaction. time: 0.010945081710815
+50 multi sql with transaction. time: 0.01052188873291
+50 multi sql with transaction. time: 0.011356830596924
+50 multi sql with transaction. time: 0.010611057281494
+50 multi sql with transaction. time: 0.011296987533569
+50 multi sql with transaction. time: 0.010303020477295
+50 multi sql with transaction. time: 0.011046886444092
+13）循环执行50次单条插入语句，使用事务，测试10次，平均耗时 0.010811376571655
+
+500 multi sql with transaction. time: 0.071004867553711
+500 multi sql with transaction. time: 0.06893515586853
+500 multi sql with transaction. time: 0.066895961761475
+500 multi sql with transaction. time: 0.065147876739502
+500 multi sql with transaction. time: 0.066673994064331
+500 multi sql with transaction. time: 0.070588827133179
+500 multi sql with transaction. time: 0.066760063171387
+500 multi sql with transaction. time: 0.074046850204468
+500 multi sql with transaction. time: 0.071737051010132
+500 multi sql with transaction. time: 0.068586826324463
+14）循环执行500次单条插入语句，使用事务，测试10次，平均耗时 0.069037747383118
+
+50*10 one sql with transaction. time: 0.046492099761963
+50*10 one sql with transaction. time: 0.048218011856079
+50*10 one sql with transaction. time: 0.055784940719604
+50*10 one sql with transaction. time: 0.051946878433228
+50*10 one sql with transaction. time: 0.050606966018677
+50*10 one sql with transaction. time: 0.047621011734009
+50*10 one sql with transaction. time: 0.046152114868164
+50*10 one sql with transaction. time: 0.046711921691895
+50*10 one sql with transaction. time: 0.046674013137817
+50*10 one sql with transaction. time: 0.047173023223877
+15）50条数据拼接成一条插入语句并连续执行10遍，使用事务，测试10次，平均耗时 0.048738098144531
+
+50*10 one sql without transaction. time: 0.050427913665771
+50*10 one sql without transaction. time: 0.049418926239014
+50*10 one sql without transaction. time: 0.048910856246948
+50*10 one sql without transaction. time: 0.05298113822937
+50*10 one sql without transaction. time: 0.049713850021362
+50*10 one sql without transaction. time: 0.049221038818359
+50*10 one sql without transaction. time: 0.050441980361938
+50*10 one sql without transaction. time: 0.049896955490112
+50*10 one sql without transaction. time: 0.051127910614014
+50*10 one sql without transaction. time: 0.05282998085022
+16）50条数据拼接成一条插入语句并连续执行10遍，不使用事务，测试10次，平均耗时 0.050497055053711
